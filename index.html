@@ -1,364 +1,636 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Arco | Trainee 2020</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arco | Trainee 2020</title>
 
-        <!-- Fonte -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-        
-        <!-- BOOTSTRAP E ESTILOS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP E ESTILOS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/bac0c8f8ce.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-        <!-- SCRIPTS -->
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- modal-video -->
+    <link rel="stylesheet" href="css/modal-video.min.css">
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/bac0c8f8ce.js" crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <META NAME="author" CONTENT="Kawê Fauster">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta name="author" content="Jamal Fauster" />
+  </head>
 
-    </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top">
+      <!-- MENU -->
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+          <a href="#nav-container" class="navbar-brand">
+            <img id="logo" src="img/logo-arco.png" alt="Trainee Arcor"
+          /></a>
 
-    <body>
-        <!-- HEADER -->
-        <header>
-            <!-- MENU -->
-            <div class="container" id="nav-container">
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-                    <a href="#nav-container" class="navbar-brand">
-                        <img id="logo" src="img/logo-arco.png" alt="Trainee Arcor"></a>
-                    <!-- MENU MOBILE -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle Navigation" id="hamburguer">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end pr-5" id="navbar-links">
-                        <div class="navbar-nav">
-                            <a href="#nav-container" class="nav-item nav-link px-3" id="home-menu">Home</a>
-                            <a href="#sobre" class="nav-item nav-link px-3" id="about-menu">Sobre a Arco</a>
-                            <a href="#programa" class="nav-item nav-link px-3" id="program-menu">O Programa</a>
-                            <a href="#processo" class="nav-item nav-link px-3" id="process-menu">O Processo</a>
-                        </div>
-                        <a href="https://eureca.me/#!/op/trainee-arco-2020" class="btn btn-success" id="btn-insc" target="_blank">INSCREVA-SE</a>
-                    </div>
-                </nav>
+          <!-- MENU MOBILE -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-links"
+            aria-controls="navbar-links"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            id="hamburguer"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pr-5"
+            id="navbar-links"
+          >
+            <div class="navbar-nav">
+              <a
+                href="#nav-container"
+                class="napv-item nav-link px-3 jump"
+                id="home-menu"
+                >Home</a
+              >
+              <a
+                href="#sobre"
+                class="nav-item nav-link px-3 jump"
+                id="about-menu"
+                >Sobre a Arco</a
+              >
+              <a
+                href="#programa"
+                class="nav-item nav-link px-3 jump"
+                id="program-menu"
+                >O Programa</a
+              >
+              <a
+                href="#processo"
+                class="nav-item nav-link px-3 jump"
+                id="process-menu"
+                >O Processo</a
+              >
             </div>
-        </header>
-        
-        <main>
-            <!-- SLIDE INICIAL -->
-            <div id="bannerInicial">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/bg-banner-inicial.jpg" class="d-block w-100" alt="Banner Inicial">
-                    </div>
-                </div>
+            <a
+              href="https://eureca.me/#!/op/trainee-arco-2020"
+              class="btn btn-success"
+              id="btn-insc"
+              target="_blank"
+              >INSCREVA-SE</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- SLIDE INICIAL -->
+      <div id="bannerInicial">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/bg-banner-inicial.jpg"
+              class="d-block w-100"
+              alt="Banner Inicial"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- DADOS DA ARCO -->
+      <div class="container" id="sobre" data-aos="fade-right">
+        <div class="row justify-center">
+          <h1>
+            Uma companhia que acredita na educação como forma de mudar o mundo
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/crescimento.png"
+              alt="40% de crescimento ao ano"
+            />
+            <h4>Aproximadamente 40% de <br />crescimento ao ano</h4>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/estudantes.png"
+              alt="1.2 milhões de alunos atendidos"
+            />
+            <h4>1.2 milhões de<br />alunos atendidos</h4>
+          </div>
+          <div class="col-md-4" data-aos="fade-right">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/escola.png"
+              alt="4.500 escolas rivadas atendidas"
+            />
+            <h4>4.500 escolas<br />privadas atendidas</h4>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col text-center">
+            <a
+              type="button"
+              class="btn btn-outline-dark"
+              href="https://arcoeducacao.com.br/"
+              target="_blank"
+              >SAIBA MAIS</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 0;" data-aos="fade-right">
+        <div class="row">
+          <div class="col pb-2" align="center">
+            <!-- <iframe width="888px" he ight="500px" src="https://www.youtube.com/embed/w7jxdAqVyzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <div class="embed-container">
+              <iframe
+                src="https://www.youtube.com/embed/w7jxdAqVyzw"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- DADOS DA ARCO -->
-            <div class="container" id="sobre">
-                <div class="row justify-center" data-anime="left">
-                    <h1>Uma companhia que acredita na educação como forma de mudar o mundo</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"  data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/crescimento.png" alt="40% de crescimento ao ano">
-                        <h4>Aproximadamente 40% de <br>crescimento ao ano</h4>
-                    </div>
-                    <div class="col-md-4"  data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/estudantes.png" alt="1.2 milhões de alunos atendidos">
-                        <h4>1.2 milhões de<br>alunos atendidos</h4>
-                    </div>
-                    <div class="col-md-4"  data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/escola.png" alt="4.500 escolas rivadas atendidas">
-                        <h4>4.500 escolas<br>privadas atendidas</h4>
-                    </div>
-                </div>
-                <div class="row pt-5">
-                    <div class="col text-center"  data-anime="left">
-                        <a type="button" class="btn btn-outline-dark" href="https://arcoeducacao.com.br/"  target="_blank">SAIBA MAIS</a>
-                    </div>
-                </div>
+      <!-- VIDEO JEITO ARCO -->
+      <div id="jeitoArco">
+        <div class="container" data-aos="fade-right">
+          <div class="row py-5">
+            <div class="col-12 col-md-6 pr-5">
+              <p class="text-left pr-5" id="text-JeitoArco">
+                A Arco tem como missão transformar a forma como os estudantes
+                aprendem, promovendo e escalando educação de excelência.
+                Desenvolvemos soluções educacionais orientadas por uma
+                metodologia própria, que tem nos pilares: conteúdo de
+                excelência, tecnologia educacional relevante e serviços
+                especializados na sua essência.
+              </p>
+              <div class="pt-2">
+                <a
+                  type="button"
+                  class="btn btn-outline-light js-modal-btn"
+                  href="#"
+                  data-video-id="Zu6yRRIxSwk"
+                  ><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a
+                >
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="container" style="padding-top: 0;">
-                <div class="row">
-                    <div class="col pb-2" align="center" data-anime="left">
-                        <iframe width="888px" height="500px" src="https://www.youtube.com/embed/w7jxdAqVyzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+      <!-- LIVROS QUE INSPIRAM -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Livros que nos inspiram</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/a-mentalidade-do-fundador.jpg"
+              alt="A Mentalidade do Fundador"
+            />
+            <h4>A Mentalidade do Fundador</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/essencialismo.jpg"
+              alt="Essencialismo"
+            />
+            <h4>Essencialismo</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/faca-acontecer.jpg"
+              alt="Faça Acontecer"
+            />
+            <h4>Faça Acontecer</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/feitas-pra-vencer.jpg"
+              alt="Feitas para Vencer"
+            />
+            <h4>Feitas para Vencer</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/garra.jpg"
+              alt="Garra"
+            />
+            <h4>Garra</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/organizacoes-exponenciais.jpg"
+              alt="Organizações Exponenciais"
+            />
+            <h4>Organizações Exponenciais</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/rapido-devagar.jpg"
+              alt="Rápido e Devagar"
+            />
+            <h4>Rápido e Devagar</h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-right">
+            <img
+              class="mx-auto d-block"
+              src="img/livros/sprint.jpg"
+              alt="Sprint"
+            />
+            <h4>Sprint</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE INICIAL -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/fortaleza.jpg"
+              class="d-block w-100"
+              alt="Time Fortaleza"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/sao-paulo.jpg"
+              class="d-block w-100"
+              alt="Time São Paulo"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#mainSlider"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#mainSlider"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container" id="programa">
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <h1>O Programa</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <p class="text-justify">
+              Nosso Programa foi criado priorizando o que mais importa: as
+              pessoas. Desenhamos uma trilha de desenvolvimento para abranger
+              tanto o lado técnico quanto aspectos comportamentais, visando um
+              desenvolvimento transformador em ambas dimensões.
+
+              <br /><br />Buscamos pessoas que se identifiquem com o nosso Jeito
+              de Trabalhar, a nossa cultura, que topem desafios e busquem
+              crescimento para evoluir sempre. Aqui, nossos valores são
+              colocados em prática todos os dias, em tudo! Eles estão nas
+              paredes, nos crachás, no início das reuniões e em cada decisão que
+              tomamos. Somos unidos pela mesma missão: de transformar a Educação
+              brasileira.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO DE DEPOIMENTOS -->
+      <div id="videoDepoimentos">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-12 col-md-6 py-5" data-aos="fade-right">
+              <h1 class="text-left" style="color: #fff;">
+                Vem com a gente?
+              </h1>
+              <div class="pt-2">
+                <a
+                  type="button"
+                  class="btn btn-outline-light js-modal-btn"
+                  href="#"
+                  data-aos="fade-right"
+                  ><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a
+                >
+              </div>
             </div>
-            
+          </div>
+        </div>
+      </div>
 
+      <!-- SOBRE O PROCESSO -->
+      <div class="container" id="processo">
+        <!-- INTRODUÇÃO -->
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <h1>O Processo</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <p class="text-justify">
+              Nosso Programa foi criado priorizando o que mais importa: as
+              pessoas. Desenhamos uma trilha de desenvolvimento para abranger
+              tanto o lado técnico quanto aspectos comportamentais, visando um
+              desenvolvimento transformador em ambas dimensões. Buscamos pessoas
+              que se identifiquem com o nosso Jeito de Trabalhar, a nossa
+              cultura, que topem desafios e busquem crescimento para evoluir
+              sempre. Aqui, nossos valores são colocados em prática todos os
+              dias, em tudo! Eles estão nas paredes, nos crachás, no início das
+              reuniões e em cada decisão que tomamos. Somos unidos pela mesma
+              missão: de transformar a Educação brasileira. Vem com a gente?
+            </p>
+          </div>
+        </div>
 
-            <!-- VIDEO JEITO ARCO -->
-            <div id="jeitoArco">
-                <div class="container">
-                    <div class="row py-5">
-                        <div class="col-12 col-md-6 pr-5"   data-anime="left">
-                            <p class="text-left pr-5" id="text-JeitoArco">
-                                A Arco tem como missão transformar a forma
-                                como os estudantes aprendem, promovendo e
-                                escalando educação de excelência. Desenvolvemos
-                                soluções educacionais orientadas por uma
-                                metodologia própria, que tem nos pilares: conteúdo
-                                de excelência, tecnologia educacional relevante e
-                                serviços especializados na sua essência.
-                            </p>
-                            <div class="pt-2">
-                                <a  type="button" class="btn btn-outline-light" href="#" data-anime="left" data-video-id="Zu6yRRIxSwk"><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- PRÉ-REQUISITOS -->
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <h2 class="pb-4 pt-5">Pré-requisitos</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-right">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/formandos.png"
+              alt="40% de crescimento ao ano"
+            />
+            <h4>
+              Estudantes ou formados entre o início de 2017 e final de 2020;
+            </h4>
+          </div>
+          <div class="col-md-4" data-aos="fade-right">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/casa.png"
+              alt="1.2 milhões de alunos atendidos"
+            />
+            <h4>
+              Mobilidade para morar em: São Paulo, Curitiba, Fortaleza ou Belo
+              Horizonte;
+            </h4>
+          </div>
+          <div class="col-md-4" data-aos="fade-right">
+            <img
+              class="ico-png mx-auto d-block"
+              src="img/viajar.png"
+              alt="4.500 escolas rivadas atendidas"
+            />
+            <h4>Disponibilidade para viajar.</h4>
+          </div>
+        </div>
+
+        <!-- CRONOGRAMA -->
+        <div class="row">
+          <div class="col" data-aos="fade-right">
+            <h2 class="pt-5 pb-1">Como será o processo seletivo?</h2>
+            <ul>
+              <li>Inscrições no Vagas.com até 30/03/2020</li>
+              <li>Migração para plataforma Eureca.me</li>
+              <li>Teste de fit cultural</li>
+              <li>Etapa de vídeo</li>
+              <li>Resolução de business case online</li>
+              <li>Bootcamp presencial</li>
+              <li>Entrevistas com a Diretoria</li>
+            </ul>
+            <p class="pt-3">
+              Uhuuu! Se chegou até aqui, você é um Trainee Arco 2020!
+            </p>
+            <p>
+              <b>Locais de Trabalho:</b> São Paulo (SP), Fortaleza (CE),
+              Curitiba (PR) e Belo Horizonte (MG)
+            </p>
+            <p>
+              Para os aprovados que não residem no local de trabalho, a Arco
+              oferece um pacote de auxílio mudança.
+            </p>
+            <div class="pt-3">
+              <a
+                type="button"
+                class="btn btn-outline-dark"
+                href="https://eureca.me/#!/op/trainee-arco-2020"
+                target="_blank"
+                >INSCREVA-SE</a
+              >
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- LIVROS QUE INSPIRAM -->
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Livros que nos inspiram</h1>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/a-mentalidade-do-fundador.jpg" alt="A Mentalidade do Fundador">
-                        <h4>A Mentalidade do Fundador</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/essencialismo.jpg" alt="Essencialismo">
-                        <h4>Essencialismo</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/faca-acontecer.jpg" alt="Faça Acontecer">
-                        <h4>Faça Acontecer</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/feitas-pra-vencer.jpg" alt="Feitas para Vencer">
-                        <h4>Feitas para Vencer</h4>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-5">
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/garra.jpg" alt="Garra">
-                        <h4>Garra</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/organizacoes-exponenciais.jpg" alt="Organizações Exponenciais">
-                        <h4>Organizações Exponenciais</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/rapido-devagar.jpg" alt="Rápido e Devagar">
-                        <h4>Rápido e Devagar</h4>
-                    </div>
-                    <div class="col-md-3" data-anime="left">
-                        <img class="mx-auto d-block" src="img/livros/sprint.jpg" alt="Sprint">
-                        <h4>Sprint</h4>
-                    </div>
-                </div>
+      <!-- SLIDE INICIAL -->
+      <div id="slideDepoimentos" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#slideDepoimentos"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#slideDepoimentos" data-slide-to="1"></li>
+          <li data-target="#slideDepoimentos" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/depoimento1.jpg"
+              class="d-block"
+              alt="Projetos de e-commerce"
+            />
+            <div
+              class="carousel-caption d-md-block col-5 align-items-start"
+              data-aos="fade-right"
+            >
+              <h4 class="text-left">Fulana de Tal</h4>
+              <p class="text-left">
+                "O que me fez escolher a Arco, foi sem dúvida as pessoas, e o
+                que me mantém na Arco, sem dúvida são as pessoas também! Aqui
+                estamos sempre mudando, tudo acontece muito rápido, somos uma
+                empresa muito jovem e ao mesmo tempo muito grande, então estar
+                aqui todos dias, se adaptando ao crescimento, com pessoas
+                incríveis é meu maior desafio e alegria."
+              </p>
             </div>
-
-
-            <!-- SLIDE INICIAL -->
-            <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-                    <li data-target="#mainSlider" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/fortaleza.jpg" class="d-block w-100" alt="Time Fortaleza">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/sao-paulo.jpg" class="d-block w-100" alt="Time São Paulo">
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/depoimento1.jpg"
+              class="d-blocK"
+              alt="Engenharia de software"
+            />
+            <div
+              class="carousel-caption d-md-block col-5 align-items-start"
+              data-aos="fade-right"
+            >
+              <h4 class="text-left">Fulana de Tal</h4>
+              <p class="text-left">
+                “Eu vejo que estamos sempre preocupados em entregar nossos
+                produtos com a maior qualidade, sempre atento aos nossos
+                clientes e vejo que o impacto que meu trabalho causa nos nossos
+                clientes, nas escolas, nos alunos nos professores é o que me
+                motiva a vir todo o dia e fazer meu projeto da melhor forma
+                possível."
+              </p>
             </div>
-
-            <div class="container" id="programa">
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <h1>O Programa</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <p class="text-justify">
-                            Nosso Programa foi criado priorizando o que mais importa: as pessoas. Desenhamos uma trilha de desenvolvimento para abranger tanto o lado técnico quanto aspectos comportamentais, visando um desenvolvimento transformador em ambas dimensões.
-
-<br><br>Buscamos pessoas que se identifiquem com o nosso Jeito de Trabalhar, a nossa cultura, que topem desafios e busquem crescimento para evoluir sempre. Aqui, nossos valores são colocados em prática todos os dias, em tudo! Eles estão nas paredes, nos crachás, no início das reuniões e em cada decisão que tomamos. Somos unidos pela mesma missão: de transformar a Educação brasileira.
-
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/depoimento1.jpg"
+              class="d-block"
+              alt="Manutenção em software"
+            />
+            <div
+              class="carousel-caption d-md-block col-5 align-items-start"
+              data-aos="fade-right"
+            >
+              <h4 class="text-left">Fulana de Tal</h4>
+              <p class="text-left">
+                "Ter senso de time aqui na Arco é mesmo pensando diferentes
+                conseguir colocar o propósito na frente. Aqui você entra e já
+                sente essa atmosfera em que as pessoas realmente acreditam no
+                nosso propósito, fazem tudo por acreditar verdadeiramente na
+                mudança que podemos gerar."
+              </p>
             </div>
-
-            <!-- VIDEO DE DEPOIMENTOS -->
-            <div id="videoDepoimentos">
-                <div class="container">
-                <div class="row py-5">
-                    <div class="col-12 col-md-6 py-5"  data-anime="left">
-                        <h1 class="text-left" style="color: #fff;">
-                            Vem com a gente?
-                        </h1>
-                        <div class="pt-2">
-                            <a type="button" class="btn btn-outline-light" href="#" data-anime="left"><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <!-- SOBRE O PROCESSO -->
-            <div class="container" id="processo">
-                <!-- INTRODUÇÃO -->
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <h1>O Processo</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <p class="text-justify">
-                            Nosso Programa foi criado priorizando o que mais importa: as pessoas. Desenhamos uma trilha de desenvolvimento para abranger tanto o lado técnico quanto aspectos comportamentais, visando um desenvolvimento transformador em ambas dimensões.
-
-                            Buscamos pessoas que se identifiquem com o nosso Jeito de Trabalhar, a nossa cultura, que topem desafios e busquem crescimento para evoluir sempre. Aqui, nossos valores são colocados em prática todos os dias, em tudo! Eles estão nas paredes, nos crachás, no início das reuniões e em cada decisão que tomamos. Somos unidos pela mesma missão: de transformar a Educação brasileira.
-                            
-                            Vem com a gente?                        
-                        </p>
-                    </div>
-                </div>
-
-                <!-- PRÉ-REQUISITOS -->
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <h2 class="pb-4 pt-5">Pré-requisitos</h2> 
-                    </div>            
-                </div>
-                <div class="row">
-                    <div class="col-md-4" data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/formandos.png" alt="40% de crescimento ao ano">
-                        <h4>Estudantes ou formados entre o início de 2017 e final de 2020;</h4>
-                    </div>
-                    <div class="col-md-4" data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/casa.png" alt="1.2 milhões de alunos atendidos">
-                        <h4>Mobilidade para morar em: São Paulo, Curitiba, Fortaleza ou Belo Horizonte;</h4>
-                    </div>
-                    <div class="col-md-4" data-anime="left">
-                        <img class="ico-png mx-auto d-block" src="img/viajar.png" alt="4.500 escolas rivadas atendidas">
-                        <h4>Disponibilidade para viajar.</h4>
-                    </div>
-                </div>
-
-
-                <!-- CRONOGRAMA -->
-                <div class="row">
-                    <div class="col" data-anime="left">
-                        <h2 class="pt-5 pb-1">Como será o processo seletivo?</h2>
-                        <ul>
-                            <li>Inscrições no Vagas.com até 30/03/2020</li>
-                            <li>Migração para plataforma Eureca.me</li>
-                            <li>Teste de fit cultural </li>
-                            <li>Etapa de vídeo</li>
-                            <li>Resolução de business case online</li>
-                            <li>Bootcamp presencial</li>
-                            <li>Entrevistas com a Diretoria</li>
-                        </ul>
-                        <p class="pt-3">Uhuuu! Se chegou até aqui, você é um Trainee Arco 2020!</p>
-                        <p><b>Locais de Trabalho:</b> São Paulo (SP), Fortaleza (CE), Curitiba (PR) e Belo Horizonte (MG)</p>
-                        <p>Para os aprovados que não residem no local de trabalho, a Arco oferece um pacote de auxílio mudança.</p>
-                        <div class="pt-3">
-                            <a type="button" class="btn btn-outline-dark" href="https://eureca.me/#!/op/trainee-arco-2020" target="_blank">INSCREVA-SE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- SLIDE INICIAL -->
-            <div id="slideDepoimentos" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                <li data-target="#slideDepoimentos" data-slide-to="0" class="active"></li>
-                <li data-target="#slideDepoimentos" data-slide-to="1"></li>
-                <li data-target="#slideDepoimentos" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/depoimento1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
-                        <div class="carousel-caption d-md-block col-5 align-items-start" data-anime="left">
-                            <h4 class="text-left">Fulana de Tal</h4>
-                            <p class="text-left">"O que me fez escolher a Arco, foi sem dúvida as pessoas, e o que me mantém na Arco, sem dúvida são as pessoas também! Aqui estamos sempre mudando, tudo acontece muito rápido, somos uma empresa muito jovem e ao mesmo tempo muito grande, então estar aqui todos dias, se adaptando ao crescimento, com pessoas incríveis é meu maior desafio e alegria."</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/depoimento1.jpg" class="d-block w-100" alt="Engenharia de software">
-                        <div class="carousel-caption d-md-block col-5 align-items-start" data-anime="left">
-                            <h4 class="text-left">Fulana de Tal</h4>
-                            <p class="text-left">“Eu vejo que estamos sempre preocupados em entregar nossos produtos com a maior qualidade, sempre atento aos nossos clientes e vejo que o impacto  que meu trabalho causa nos nossos clientes, nas escolas, nos alunos nos professores é o que me motiva a vir todo o dia e fazer meu projeto da melhor forma possível."</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/depoimento1.jpg" class="d-block w-100" alt="Manutenção em software">
-                        <div class="carousel-caption d-md-block col-5 align-items-start" data-anime="left">
-                            <h4 class="text-left">Fulana de Tal</h4>
-                            <p class="text-left">"Ter senso de time aqui na Arco é mesmo pensando diferentes conseguir colocar o propósito na frente. Aqui você entra e já sente essa atmosfera em que as pessoas realmente acreditam no nosso propósito, fazem tudo por acreditar verdadeiramente na mudança que podemos gerar."</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#slideDepoimentos" role="button" data-slide="prev">
+          </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#slideDepoimentos" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#slideDepoimentos" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </main>
+                </a> -->
+      </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="row d-flex justify-content-center align-items-center">
-              <div class="col-auto">
-                <img src="img/logo-arco-colorida.png" alt="arco" id="logo-footer" />
-              </div>
-              <div class="col-auto mx-4 mt-4 mt-md-0">
-                &copy; 2020 Arco. Todos os direitos reservados.
-              </div>
-              <div class="col-auto mt-4 mt-md-0" id="socials">
-                <a href="https://www.facebook.com/arcoeducacao/" target="_blank"
-                  ><i class="fab fa-facebook-f px-1"></i
-                ></a>
-                <a href="https://www.instagram.com/arcoeducacao/" target="_blank"
-                  ><i class="fab fa-instagram px-1"></i
-                ></a>
-                <a href="https://www.linkedin.com/company/arcoeducacao/" target="_blank"
-                  ><i class="fab fa-linkedin px-1"></i
-                ></a>
-                <a href="https://arcoeducacao.com.br/" target="_blank"
-                  ><i class="fa fa-globe px-1"></i
-                ></a>
-              </div>
-            </div>
-        </footer>
+      <div class="slickslide">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
+    </main>
 
-        <script src="js/script.js"></script>
-    </body>
+    <!-- FOOTER -->
+    <footer>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-auto">
+          <img src="img/logo-arco-colorida.png" alt="arco" id="logo-footer" />
+        </div>
+        <div class="col-auto mx-4 mt-4 mt-md-0">
+          &copy; 2020 Arco. Todos os direitos reservados.
+        </div>
+        <div class="col-auto mt-4 mt-md-0" id="socials">
+          <a href="https://www.facebook.com/arcoeducacao/" target="_blank"
+            ><i class="fab fa-facebook-f px-1"></i
+          ></a>
+          <a href="https://www.instagram.com/arcoeducacao/" target="_blank"
+            ><i class="fab fa-instagram px-1"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/arcoeducacao/"
+            target="_blank"
+            ><i class="fab fa-linkedin px-1"></i
+          ></a>
+          <a href="https://arcoeducacao.com.br/" target="_blank"
+            ><i class="fa fa-globe px-1"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- modal-video -->
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/modal-video.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".slickslide").slick();
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

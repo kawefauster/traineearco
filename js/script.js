@@ -1,22 +1,21 @@
-//SCROL NAS SESSÕES
-$('nav a').click(function(e){
-    e.preventDefault();
+$(document).ready(function (){
+  //SCROL NAS SESSÕES
+  $('.jump').click(function(e){
+      e.preventDefault();
 
-    const id = $(this).attr('href');
-    const targetOffset =$(id).offset().top;
-    const menuHeight = $('nav').innerHeight();
+      const id = $(this).attr('href');
+      const targetOffset =$(id).offset().top;
+      const menuHeight = $('nav').innerHeight();
 
-    $('html, body').animate({
-        scrollTop: targetOffset - menuHeight
-    }, 500);
-
-
-});
+      $('html, body').animate({
+          scrollTop: targetOffset - menuHeight
+      }, 500);
 
 
+  });
 
-//ANIMAÇÕES
-const debounce = function(func, wait, immediate) {
+  //ANIMAÇÕES
+  const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
       const context = this;
@@ -53,3 +52,6 @@ const debounce = function(func, wait, immediate) {
     }, 200));
   }
 
+  $(".js-modal-btn").modalVideo();
+
+});
