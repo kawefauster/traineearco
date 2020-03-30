@@ -1,0 +1,337 @@
+/* GERAIS */
+@font-face {
+    font-family: bosk;
+    src: url('Bosk.otf');
+}
+
+@font-face {
+    font-family: effra;
+    src: url('Effra_Std_Rg.ttf');
+}
+@font-face {
+    font-family: effra-lt;
+    src: url('Effra_Std_Lt.ttf');
+}
+
+body{
+    font-family: effra, Sans-serfi;
+}
+
+body.disabled {
+    overflow-x: hidden;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+h1{
+    font: 60px bosk, Sans-serfi;
+    text-align: center;
+    color: #011235;
+    padding-bottom: 60px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h4{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p, li{
+    color: #444;
+    font-size: 17px;
+
+    font-family: effra-lt, Sans-serfi;
+}
+
+a{
+    font-weight: bold !important;
+}
+
+.fixed-top{
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+
+
+/* ANIMAÇÃO DOS ELEMENTOS */
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+
+/* BARRA DE NAVEGAÇÃO */
+
+
+header, .navbar{
+    background-color: #071636;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 130px;;
+    padding: 20px;
+}
+
+@media(max-width: 767px){
+    #logo{
+        width: 90px;;
+        padding: 20px;
+    }
+}
+
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+#navbar-links a{
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+#btn-insc{
+    color: #011235;
+    background-color: #f2ab00;
+    border-color: #f2ab00;
+    margin-left: 10px;
+}
+
+@media(max-width: 767px){
+    #btn-insc{  
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+}
+
+#btn-insc:hover{
+    color: #011235 !important;
+    background-color: #dc9b00 !important;
+    border-color: #dc9b00 !important;
+}
+
+
+#hamburguer{
+    fill: #fff !important;
+    border-color: #fff;
+}
+
+
+
+/* SLIDER */
+
+#bannerInicial{
+
+}
+
+#bannerInicial .carousel-inner, #bannerInicial .carousel-item{
+    height: 80wh;
+}
+
+#bannerInicial .carousel-caption{
+    top: 30%;
+}
+
+
+
+
+/* SESSÃO 1 DE ÍCONES */
+
+.ico-png{
+    max-width: 120px;
+    align-content: center;
+}
+
+.btn-outline-dark{
+    color: #071636;
+    border-color: #071636;
+}
+
+.btn-outline-dark:hover{
+    color: #fff;
+    background-color:#071636;
+}
+
+
+
+
+/* VIDEO JEITO ARCO*/
+@media(min-width: 768px){
+    #jeitoArco{
+        height: 100% !important; 
+        background: linear-gradient(90deg, rgba(0,0,0,.65) 50%, rgba(0,0,0,0) 50%), url("../img/bg-jeito-arco.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media(max-width: 767px){
+    #jeitoArco{
+        height: 100% !important; 
+        background-color: black;
+        background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,0.4)), url("../img/bg-jeito-arco.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+#text-JeitoArco{
+    color: #fff !important;
+    font-size: 16pt;
+}
+
+.btn-outline-light:hover{
+    color: #071636;
+}
+
+
+/* VIDEO ARI*/
+
+
+
+/* FOTOS DOS TIMES */
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90wh;;
+}
+
+#mainSlider .carousel-caption{
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.carousel-indicators .active{
+    background-color: #2D6CE0
+}
+
+
+
+/* VIDEO DE DEPOIMENTOS*/
+@media(min-width: 768px){
+    #videoDepoimentos{
+        height: 100% !important; 
+        background: linear-gradient(90deg, rgba(0,0,0,.4) 50%, rgba(0,0,0,0) 50%), url("../img/bg-programa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media(max-width: 767px){
+    #videoDepoimentos{
+        height: 100% !important; 
+        background-color: black;
+        background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,0.4)), url("../img/bg-programa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+
+/* PRÉ-REQUISITOS */
+.icon-tam{
+    font-size: 70px;
+}
+
+/* DEPOIMENTOS */
+#slideDepoimentos .carousel-caption{
+    top: 20%;
+}
+
+#slideDepoimentos .carousel-caption p{
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.carousel-indicators .active{
+    background-color:  #2D6CE0
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #F6F6F6;
+    color: #707070;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+#logo-footer{
+    width: 100px !important;
+}
+
+footer a{
+    color: #707070;
+}
+
+footer a:hover{
+    color: #071636;
+}
+
+#socials{
+    font-size: 20px;
+}
+
+
+#bannerInicial{
+    position: sticky;
+}
