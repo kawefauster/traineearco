@@ -37,17 +37,23 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
+    <!-- OWL Slide -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <meta name="author" content="Jamal Fauster" />
   </head>
 
   <body>
+    <div id="topo"></div>
     <!-- HEADER -->
-    <header class="fixed-top">
+  <div class="container-fluid sticky-top">
+    <header>
       <!-- MENU -->
-      <div class="container" id="nav-container">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-          <a href="#nav-container" class="navbar-brand">
+      <div id="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="#topo" class="navbar-brand">
             <img id="logo" src="img/logo-arco.png" alt="Trainee Arcor"
           /></a>
 
@@ -64,13 +70,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div
             class="collapse navbar-collapse justify-content-end pr-5"
             id="navbar-links"
           >
             <div class="navbar-nav">
               <a
-                href="#nav-container"
+                href="#topo"
                 class="napv-item nav-link px-3 jump"
                 id="home-menu"
                 >Home</a
@@ -96,7 +103,7 @@
             </div>
             <a
               href="https://eureca.me/#!/op/trainee-arco-2020"
-              class="btn btn-success"
+              class="btn btn-success d-none d-lg-block"
               id="btn-insc"
               target="_blank"
               >INSCREVA-SE</a
@@ -105,8 +112,22 @@
         </nav>
       </div>
     </header>
+    
+    <div class="row d-lg-none pb-4" id="btn-insc-mobile">
+      <div class="col">
+        <a
+        href="https://eureca.me/#!/op/trainee-arco-2020"
+        class="btn btn-primary btn-block"
+        type="button"
+        target="_blank"
+        style="margin-left: 0px;"
+        >INSCREVA-SE</a>
+      </div>
+    </div>
+  </div>
 
     <main>
+      <!-- Cadê row e col aqui -->
       <!-- SLIDE INICIAL -->
       <div id="bannerInicial">
         <div class="carousel-inner">
@@ -123,9 +144,11 @@
       <!-- DADOS DA ARCO -->
       <div class="container" id="sobre" data-aos="fade-right">
         <div class="row justify-center">
-          <h1>
-            Uma companhia que acredita na educação como forma de mudar o mundo
-          </h1>
+          <div class="col">
+            <h1>
+              Uma companhia que acredita na educação como forma de mudar o mundo
+            </h1>
+          </div>
         </div>
         <div class="row">
           <div class="col-md-4">
@@ -169,8 +192,7 @@
       <div class="container" style="padding-top: 0;" data-aos="fade-right">
         <div class="row">
           <div class="col pb-2" align="center">
-            <!-- <iframe width="888px" he ight="500px" src="https://www.youtube.com/embed/w7jxdAqVyzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <div class="embed-container">
+            <div class="embed-container"">
               <iframe
                 src="https://www.youtube.com/embed/w7jxdAqVyzw"
                 frameborder="0"
@@ -185,8 +207,8 @@
       <div id="jeitoArco">
         <div class="container" data-aos="fade-right">
           <div class="row py-5">
-            <div class="col-12 col-md-6 pr-5">
-              <p class="text-left pr-5" id="text-JeitoArco">
+            <div class="col-12 col-md-6 col-sm-12 pr-5">
+              <p class="text-left pr-4" id="text-JeitoArco">
                 A Arco tem como missão transformar a forma como os estudantes
                 aprendem, promovendo e escalando educação de excelência.
                 Desenvolvemos soluções educacionais orientadas por uma
@@ -199,7 +221,8 @@
                   type="button"
                   class="btn btn-outline-light js-modal-btn"
                   href="#"
-                  data-video-id="Zu6yRRIxSwk"
+                  data-aos="fade-right"
+                  data-video-id="yJjtFEQkqWM"
                   ><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a
                 >
               </div>
@@ -218,7 +241,7 @@
         <div class="row justify-content-center">
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/a-mentalidade-do-fundador.jpg"
               alt="A Mentalidade do Fundador"
             />
@@ -226,7 +249,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/essencialismo.jpg"
               alt="Essencialismo"
             />
@@ -234,7 +257,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/faca-acontecer.jpg"
               alt="Faça Acontecer"
             />
@@ -242,7 +265,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/feitas-pra-vencer.jpg"
               alt="Feitas para Vencer"
             />
@@ -252,7 +275,7 @@
         <div class="row justify-content-center pt-5">
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/garra.jpg"
               alt="Garra"
             />
@@ -260,7 +283,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/organizacoes-exponenciais.jpg"
               alt="Organizações Exponenciais"
             />
@@ -268,7 +291,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/rapido-devagar.jpg"
               alt="Rápido e Devagar"
             />
@@ -276,7 +299,7 @@
           </div>
           <div class="col-md-3" data-aos="fade-right">
             <img
-              class="mx-auto d-block"
+              class="mx-auto d-block img-fluid"
               src="img/livros/sprint.jpg"
               alt="Sprint"
             />
@@ -363,12 +386,22 @@
               </h1>
               <div class="pt-2">
                 <a
+                type="button"
+                class="btn btn-outline-light"
+                href="https://eureca.me/#!/op/trainee-arco-2020"
+                target="_blank"
+                >INSCREVA-SE</a
+              >
+
+                <!-- VAI COLOCAR EM BREVE -->
+                <!-- <a
                   type="button"
                   class="btn btn-outline-light js-modal-btn"
                   href="#"
                   data-aos="fade-right"
+                  data-video-id="Zu6yRRIxSwk"
                   ><i class="fa fa-play pr-3"></i>ASSISTA O VIDEO</a
-                >
+                > -->
               </div>
             </div>
           </div>
@@ -443,8 +476,6 @@
           <div class="col" data-aos="fade-right">
             <h2 class="pt-5 pb-1">Como será o processo seletivo?</h2>
             <ul>
-              <li>Inscrições no Vagas.com até 30/03/2020</li>
-              <li>Migração para plataforma Eureca.me</li>
               <li>Teste de fit cultural</li>
               <li>Etapa de vídeo</li>
               <li>Resolução de business case online</li>
@@ -476,95 +507,92 @@
       </div>
 
       <!-- SLIDE INICIAL -->
-      <div id="slideDepoimentos" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            data-target="#slideDepoimentos"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#slideDepoimentos" data-slide-to="1"></li>
-          <li data-target="#slideDepoimentos" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="img/depoimento1.jpg"
-              class="d-block"
-              alt="Projetos de e-commerce"
-            />
-            <div
-              class="carousel-caption d-md-block col-5 align-items-start"
-              data-aos="fade-right"
-            >
-              <h4 class="text-left">Fulana de Tal</h4>
-              <p class="text-left">
-                "O que me fez escolher a Arco, foi sem dúvida as pessoas, e o
-                que me mantém na Arco, sem dúvida são as pessoas também! Aqui
-                estamos sempre mudando, tudo acontece muito rápido, somos uma
-                empresa muito jovem e ao mesmo tempo muito grande, então estar
-                aqui todos dias, se adaptando ao crescimento, com pessoas
-                incríveis é meu maior desafio e alegria."
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/depoimento1.jpg"
-              class="d-blocK"
-              alt="Engenharia de software"
-            />
-            <div
-              class="carousel-caption d-md-block col-5 align-items-start"
-              data-aos="fade-right"
-            >
-              <h4 class="text-left">Fulana de Tal</h4>
-              <p class="text-left">
-                “Eu vejo que estamos sempre preocupados em entregar nossos
-                produtos com a maior qualidade, sempre atento aos nossos
-                clientes e vejo que o impacto que meu trabalho causa nos nossos
-                clientes, nas escolas, nos alunos nos professores é o que me
-                motiva a vir todo o dia e fazer meu projeto da melhor forma
-                possível."
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/depoimento1.jpg"
-              class="d-block"
-              alt="Manutenção em software"
-            />
-            <div
-              class="carousel-caption d-md-block col-5 align-items-start"
-              data-aos="fade-right"
-            >
-              <h4 class="text-left">Fulana de Tal</h4>
-              <p class="text-left">
-                "Ter senso de time aqui na Arco é mesmo pensando diferentes
-                conseguir colocar o propósito na frente. Aqui você entra e já
-                sente essa atmosfera em que as pessoas realmente acreditam no
-                nosso propósito, fazem tudo por acreditar verdadeiramente na
-                mudança que podemos gerar."
-              </p>
+
+      <div class="slickslide">
+
+        <div class="slickslideP" id="depoimento1"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div>
+              <div class="row d-lg-none">
+                <div class="col">
+                  <img src="img/depoimento1-min.png" alt="Vitor Mekaru" style="max-width: 145px !important; padding-bottom: 15px;">
+                </div>
+              </div>
+              <div class="row ajusta-altura">
+                <div class="col-md-12 col-lg-7">
+                  <div>
+                    <h4 class="text-left">Vitor Mekaru</h4>
+                    <p class="text-left">
+                      "Eu não tenho dúvidas que não sou a mesma pessoa que entrou 1 ano atrás aqui.
+                      Eu estar confortável com essas mudanças constantes, de tomar decisões mais rápidas,
+                      de ser mais executor, são mudanças que me fazem ser um Victor completamente diferente.
+                      Estar na Arco é saber que quando uma pessoa falha você tem a certeza que vai ter uma
+                      pessoa atrás que estará te suportando para segurar o teu erro. E se essa pessoa errar,
+                      todo o time vai se movimentar para que a gente consiga construir a melhor jogada."
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <a class="carousel-control-prev" href="#slideDepoimentos" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#slideDepoimentos" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a> -->
+
+        <div class="slickslideP" id="depoimento2">
+          <div class="container h-100 d-flex align-items-center">
+            <div>
+              <div class="row d-lg-none">
+                <div class="col">
+                  <img src="img/depoimento2-min.png" alt="Alessandra Soares" style="max-width: 145px !important; padding-bottom: 15px;">
+                </div>
+              </div>
+              <div class="row ajusta-altura">
+                <div class="col-md-12 col-lg-7">
+                  <h4 class="text-left">Alessandra Soares</h4>
+                  <p class="text-left">
+                    "No fim do dia, o Trainee tem um problema para resolver. O dia a dia é feito de
+                    buscar formas diferentes de enxergar, estruturar e resolver esse problema para gerar um
+                    resultado. Tudo isso  é muito mais que uma rotina de trabalho, são n fatores que te desenvolvem,
+                    fazem você pensar fora da caixa, assumir posturas diferentes, se expor à estímulos que não
+                    são habituais, e isso é muito importante e rico."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slickslideP" id="depoimento3">
+          <div class="container h-100 d-flex align-items-center">
+            <div>
+              <div class="row d-lg-none">
+                <div class="col">
+                  <img src="img/depoimento3-min.png" alt="Guilherme Virgino" style="max-width: 145px !important; padding-bottom: 15px;">
+                </div>
+              </div>
+              <div class="row ajusta-altura">
+                <div class="col-md-12 col-lg-7">
+                  <h4 class="text-left">Guilherme Virgino</h4>
+                  <p class="text-left">
+                    "Eu vejo que estamos sempre preocupados em entregar nossos produtos com a maior qualidade,
+                    sempre atento aos nossos clientes e vejo que o impacto  que meu trabalho causa nos nossos
+                    clientes, nas escolas, nos alunos nos professores é o que me motiva a vir todo o dia e
+                    fazer meu projeto da melhor forma possível."
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-6 setas pt-5">
+                  <img src="img/right-arrow.png" alt="" class="seta-dir">
+                <div class="col-6 setas">
+                  <img src="img/left-arrow.png" alt="" class="seta-esq">
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="slickslide">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
     </main>
 
     <!-- FOOTER -->
@@ -603,10 +631,9 @@
 
     <!-- SCRIPTS -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -625,9 +652,18 @@
     <script src="js/jquery-modal-video.min.js"></script>
     <script src="js/modal-video.min.js"></script>
 
+
     <script>
       $(document).ready(function() {
-        $(".slickslide").slick();
+        $(".slickslide").slick({
+          'arrows': true,
+          'infinite': true,
+          // 'dots': true,
+
+          // 'appendArrows': $(".setas"),
+          // 'prevArrow': $(".seta-esq"),
+          // 'nextArrow': $(".seta-dir"),
+        });
       });
     </script>
 
