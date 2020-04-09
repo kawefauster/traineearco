@@ -10,8 +10,6 @@ $(document).ready(function (){
       $('html, body').animate({
           scrollTop: targetOffset - menuHeight
       }, 500);
-
-
   });
 
   //ANIMAÇÕES
@@ -53,5 +51,18 @@ $(document).ready(function (){
   }
 
   $(".js-modal-btn").modalVideo();
+
+  // $(document).scroll(function scrollFunction() {
+  //   if (
+  //     document.body.scrollTop > 116 ||
+  //     document.documentElement.scrollTop > 116
+  //   ) {
+  //     document.getElementById("header-top").className =
+  //       "fixed-top";
+  //   } else {
+  //     document.getElementById("header-top").className =
+  //       "";
+  //   }
+  // });
 
 });

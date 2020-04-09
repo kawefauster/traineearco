@@ -15,10 +15,8 @@
 
 body{
     font-family: effra, Sans-serfi;
-}
-
-body.disabled {
     overflow-x: hidden;
+    /* max-width: 100%; */
 }
 
 .row{
@@ -34,7 +32,7 @@ body.disabled {
 }
 
 h1{
-    font: 60px bosk, Sans-serfi;
+    font: 45px bosk, Sans-serfi;
     text-align: center;
     color: #011235;
     padding-bottom: 60px;
@@ -63,10 +61,10 @@ a{
     font-weight: bold !important;
 }
 
-.fixed-top{
+/* .fixed-top{
     position: -webkit-sticky;
     position: sticky;
-}
+} */
 
 
 
@@ -96,6 +94,9 @@ a{
 
 /* BARRA DE NAVEGAÇÃO */
 
+/* header{
+    height: 116px;
+} */
 
 header, .navbar{
     background-color: #071636;
@@ -142,15 +143,33 @@ header, .navbar{
     margin-left: 10px;
 }
 
-@media(max-width: 767px){
+/* @media(max-width: 767px){
     #btn-insc{  
         margin-bottom: 25px;
         margin-left: 10px;
         margin-top: 15px;
     }
-}
+} */
 
 #btn-insc:hover{
+    color: #011235 !important;
+    background-color: #dc9b00 !important;
+    border-color: #dc9b00 !important;
+}
+
+#btn-insc-mobile{
+    background-color: #071636;
+}
+
+#btn-insc-mobile a{
+    color: #fff;
+    background-color: #f2ab00;
+    border-color: #f2ab00;
+    margin-left: 8px;
+    max-width: 100%;
+}
+
+#btn-insc-mobile a:hover{
     color: #011235 !important;
     background-color: #dc9b00 !important;
     border-color: #dc9b00 !important;
@@ -291,19 +310,70 @@ header, .navbar{
 }
 
 /* DEPOIMENTOS */
-#slideDepoimentos .carousel-caption{
+/* #slideDepoimentos .carousel-caption{
     top: 20%;
 }
 
-#slideDepoimentos .carousel-caption p{
-    font-size: 20px;
-    margin-bottom: 100px;
-    color: #fff;
-}
+
 
 .carousel-indicators .active{
     background-color:  #2D6CE0
+} */
+
+.slickslide p{
+    font-size: 18px;
+    color: #fff;
 }
+
+.slickslide h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.slickslide{
+    background-color: #F6F6F6;
+}
+
+
+#depoimento1{
+    height: 620px !important; 
+    background-image:url("../img/depoimento1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#depoimento2{
+    height: 620px !important; 
+    background: url("../img/depoimento2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#depoimento3{
+    height: 620px !important; 
+    background: url("../img/depoimento3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.seta-esq{
+    width: 50px;
+    cursor: pointer;
+    float: left;
+}
+
+.seta-dir{
+    margin-left: 15px;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+}   
 
 
 /* FOOTER */
@@ -351,4 +421,10 @@ footer a:hover{
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (min-width: 961px){
+    .ajusta-altura{
+      height: 100% !important;
+    }
   }
